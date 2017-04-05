@@ -1,0 +1,6 @@
+c:\users\rizwan\documents\visual studio 2015\Projects\CalculatorTest\CalculatorTest\bin\Debug\CalculatorTest.exe.config
+c:\users\rizwan\documents\visual studio 2015\Projects\CalculatorTest\CalculatorTest\obj\Debug\CalculatorTest.csprojResolveAssemblyReference.cache
+c:\users\rizwan\documents\visual studio 2015\Projects\CalculatorTest\CalculatorTest\bin\Debug\CalculatorTest.exe
+c:\users\rizwan\documents\visual studio 2015\Projects\CalculatorTest\CalculatorTest\bin\Debug\CalculatorTest.pdb
+c:\users\rizwan\documents\visual studio 2015\Projects\CalculatorTest\CalculatorTest\obj\Debug\CalculatorTest.exe
+c:\users\rizwan\documents\visual studio 2015\Projects\CalculatorTest\CalculatorTest\obj\Debug\CalculatorTest.pdb
