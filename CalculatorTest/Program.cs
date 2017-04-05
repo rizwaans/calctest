@@ -25,23 +25,31 @@ namespace CalculatorTest
             {
                 //pass the first argument
                 Console.WriteLine("Please enter first argument :");
-                _argument1 = Convert.ToInt16(Console.ReadLine());
-               
+
+                while(!int.TryParse(Console.ReadLine(), out _argument1))
+                {
+                    Console.WriteLine("Please enter a number");
+                }
+
                 //pass the operation to be performed and check the operator
                 Console.WriteLine("Please enter the operation that needs to be performed : ");
                 _operation = Console.ReadLine();
-                if (!checkOperator(_operation))
+
+                while(!checkOperator(_operation))
                 {
                     Console.WriteLine("please enter valid operator. +, - , * , %");
-                    Console.ReadLine();
+                    _operation = Console.ReadLine();
                 }
 
-                    //pass the second operation
-                    Console.WriteLine("Please enter second argument : ");
-                    _argument2 = Convert.ToInt16(Console.ReadLine());
+                //pass the second operation
+                Console.WriteLine("Please enter second argument : ");
+                while (!int.TryParse(Console.ReadLine(), out _argument2))
+                {
+                    Console.WriteLine("Please enter a number");
+                }
 
-                    //do the calc
-                    switch (_operation)
+                //do the calc
+                switch (_operation)
                     {
                         case "+":
                             _result = _argument1 + _argument2;
@@ -66,7 +74,8 @@ namespace CalculatorTest
                
             }
 
-            catch(Exception ex)
+
+            catch (Exception ex)
             {
                 writetolog(ex.ToString());
             }
@@ -80,6 +89,7 @@ namespace CalculatorTest
             else
                 return false;
         }
+       
         public static void writetolog(string result)
         {
             try

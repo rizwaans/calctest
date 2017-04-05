@@ -6,3 +6,6 @@
 
 9
 
+System.DivideByZeroException: Attempted to divide by zero.
+   at CalculatorTest.Program.Main(String[] args) in C:\Users\rizwan\Documents\Visual Studio 2015\Projects\CalculatorTest\CalculatorTest\Program.cs:line 66
+
